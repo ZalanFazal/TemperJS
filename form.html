@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Form</title>
+</head>
+<body>
+    <div class="container bg-white p-8 rounded-lg shadow-lg w-full max-xl mx-auto ">
+        <!-- Green Top Logo -->
+        <div class="flex justify-evenly ml-32 mb-8">
+            <div class="w-10 h-10 bg-[#00ff86] rounded-full flex items-center justify-center">
+                <img width="30" height="48" src="https://img.icons8.com/fluency-systems-regular/48/1A1A1A/slr-camera.png" alt="slr-camera"/>
+            </div>
+        </div>
+    
+        <!-- Profile Image and Green Icon Section -->
+        <div class="flex items-center justify-center mb-20">
+            <div class="relative">
+                <div class="w-32 h-2 flex justify-center items-center">
+                    <svg class="h-24 w-24 rounded-full bg-purple-100" viewBox="0 0 60 60">
+                        <defs>
+                            <filter id="purple-filter">
+                                <feColorMatrix type="matrix" values="0.6 0 0 0 0.6 
+                                                                     0 0.3 0 0 0 
+                                                                     0 0 0.6 0 0.6 
+                                                                     0 0 0 1 0"/>
+                            </filter>
+                        </defs>
+                        <image href="https://img.icons8.com/fluency-systems-regular/48/guest-male.png" 
+                               width="48" height="48" 
+                               x="6" y="6"
+                               filter="url(#purple-filter)"
+                               class="rounded-full"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Form Section -->
+        <form>
+            <div class="mb-4 ">
+                <label for="firstName" class="block text-gray-700"><b>Full name</b></label>
+                   <p>As it appears on your identification</p>
+                <div class="jan flex gap-11 ">
+                <input type="text" id="firstName" placeholder="Han"
+                    class="mt-2 w-full p-2 border border-gray-300 rounded-md bg-gray-50">
+                        <input type="text" id="lastName" placeholder="Janssen"
+                    class="mt-2 w-full p-2 border border-gray-300 rounded-md bg-gray-50">
+                  
+            </div>
+    
+            <div class="mb-4">
+            
+            </div>
+    
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700"><b>Email<b></label>
+                <input type="email" id="email" placeholder="sunserviceslogistics@hotmail.com"
+                    class="mt-2 w-full p-2 border border-gray-300 rounded-md bg-gray-50">
+            </div>
+    
+            <div class="mb-4 ">
+                <label for="phone" class="block text-gray-700">Phone number</label>
+                <div class="flex">
+                    <select class="p-2 border border-gray-300 rounded-l-md bg-gray-50">
+                        <option value="+31">🇳🇱 +31</option>
+                        <!-- Add more country codes as needed -->
+                    </select>
+                    <input type="text" id="phone" placeholder="06 83695813"
+                        class="w-full p-2 border-t border-r border-b border-gray-300 rounded-r-md bg-gray-50">
+                </div>
+            </div>
+    
+            <div class="mb-4">
+                <label for="language" class="block text-gray-700">Language</label>
+                <select id="language" class="mt-2 w-full p-2 border border-gray-300 rounded-md bg-gray-50">
+                    <option value="English">English</option>
+                    <!-- Add more languages as needed -->
+                </select>
+            </div>
+    
+            <div class="flex justify-center">
+                <button type="submit"
+                    class="w-full bg-[#00FF86]  p-2 rounded-md shadow-md hover:bg-green-600 "><b>Save</b></button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
